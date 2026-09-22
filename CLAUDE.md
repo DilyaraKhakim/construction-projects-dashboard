@@ -31,7 +31,7 @@ npm run export:offline   # автономное демо demo/dashboard_offline.
 
 1. Формат XLSX строгий: 11 колонок в порядке `EXPECTED_HEADERS` (`backend/server.js`). Проект определяется именем файла.
 2. Путь к БД один — `db/projects.sqlite` (задан в `backend/server.js` и `scripts/`). Не перемещать БД без правки всех трёх мест.
-3. `db/` не коммитить — runtime-артефакт, есть в `.gitignore`. `demo/dashboard_offline.html` коммитится сознательно (демо без установки для куратора и коллег); перед коммитом пересобрать: `npm run export:offline`.
+3. `db/` не коммитить — runtime-артефакт, есть в `.gitignore`. `demo/dashboard_offline.html` коммитится сознательно (демо без установки для руководителя и коллег); перед коммитом пересобрать: `npm run export:offline`.
 4. Даты в БД хранятся в ISO (YYYY-MM-DD); Excel-serial конвертируется при импорте (`isoDate`).
 5. Не менять структуру API (`/api/upload`, `/api/uploads`, `/api/projects`, `/api/kpi`, `/api/records`, `/api/charts/*`, `/health`) без синхронного обновления `frontend/src/api.js` и mock-API в `scripts/build_offline.js`.
 6. Перед коммитом проверять: `npm run build` проходит, backend стартует с чистой БД после `npm run seed`.
