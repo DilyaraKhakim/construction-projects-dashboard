@@ -308,7 +308,7 @@ function ResponsibleList({ items }) {
       <div className="responsible-legend">
         <span className="legend-item">
           <span className="legend-dot" style={{ background: "#5ce1e6" }} />
-          Заверш.
+          Завершено
         </span>
         <span className="legend-item">
           <span className="legend-dot" style={{ background: "#f6c947" }} />
@@ -316,7 +316,7 @@ function ResponsibleList({ items }) {
         </span>
         <span className="legend-item">
           <span className="legend-dot" style={{ background: "#666" }} />
-          Не нач.
+          Не начато
         </span>
       </div>
       <div className="responsible-list scrollable">

@@ -445,7 +445,7 @@ h1 {
 
 .list-header {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 0.8fr 0.7fr 1.2fr;
+  grid-template-columns: 1fr 1.2fr 0.8fr 0.5fr 0.8fr;
   gap: 8px;
   padding: 0 12px 6px 12px;
   margin-bottom: 4px;
@@ -457,11 +457,12 @@ h1 {
 }
 
 .list-header-resp {
-  grid-template-columns: 1fr 1.5fr auto auto;
+  grid-template-columns: 1fr 2fr 96px 72px;
 }
 
 .responsible-legend {
   display: flex;
+  justify-content: flex-end;
   gap: 16px;
   padding: 0 12px 8px 12px;
 }
@@ -559,7 +560,7 @@ h1 {
 
 .responsible-row {
   display: grid;
-  grid-template-columns: 1fr 1.5fr auto auto;
+  grid-template-columns: 1fr 2fr 96px 72px;
   gap: 8px;
   padding: 10px 12px;
   background: var(--glass);
@@ -579,6 +580,7 @@ h1 {
 
 .responsible-status-dots {
   display: flex;
+  justify-content: center;
   gap: 6px;
 }
 
