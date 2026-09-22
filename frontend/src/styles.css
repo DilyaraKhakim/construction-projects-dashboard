@@ -179,6 +179,7 @@ h1 {
 .chart-card,
 .table-card {
   padding: 16px;
+  margin-top: 20px;
 }
 
 .section-title {
@@ -547,11 +548,14 @@ h1 {
   white-space: nowrap;
 }
 
-.critical-responsible,
 .critical-dates,
 .critical-delay {
   color: var(--muted);
   text-align: right;
+}
+
+.critical-responsible {
+  color: var(--muted);
 }
 
 .critical-delay {
