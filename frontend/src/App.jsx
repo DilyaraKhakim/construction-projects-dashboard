@@ -328,9 +328,9 @@ function ResponsibleList({ items }) {
   );
 }
 
-function RecordsTable({ records, loading, filters, onFiltersChange, projects, onRefresh }) {
+function RecordsTable({ records, loading, filters, onFiltersChange, projects, onRefresh, scrollRef }) {
   const keepScroll = (fn) => {
-    lastScroll.current = window.scrollY;
+    if (scrollRef) scrollRef.current = window.scrollY;
     fn();
   };
   const [pageSize, setPageSize] = useState(10);
@@ -902,6 +902,7 @@ function App() {
                 projects={projects}
                 onFiltersChange={setFilters}
                 onRefresh={fetchAll}
+                scrollRef={lastScroll}
               />
           </Spin>
         </div>
