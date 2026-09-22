@@ -1,0 +1,20 @@
+{
+  "name": "construction-projects-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Дашборд портфеля строительных проектов: React + Express + SQLite",
+  "license": "MIT",
+  "scripts": {
+    "setup": "npm install --prefix backend && npm install --prefix frontend",
+    "seed": "python scripts/seed_db.py",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "build": "npm run build --prefix frontend",
+    "start": "npm start --prefix backend",
+    "export:offline": "node scripts/build_offline.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,20 @@
+# Зависимости
+node_modules/
+
+# Сборка фронтенда
+frontend/dist/
+
+# Runtime-артефакты (воспроизводятся из data/*.xlsx командой npm run seed)
+db/
+*.sqlite
+*.sqlite.bak
+
+# Автономное демо коммитится сознательно: работает без установки (для куратора и коллег).
+# Пересобирается командой npm run export:offline перед коммитом.
+
+# Скриншоты и системные файлы
+.claude/settings.local.json
+.obsidian/
+.DS_Store
+Thumbs.db
+*.log
