@@ -302,8 +302,22 @@ function ResponsibleList({ items }) {
       <div className="list-header list-header-resp">
         <span className="lh-col">Фамилия И.О.</span>
         <span className="lh-col">Бюджет</span>
-        <span className="status-header lh-col">Статусы работ (Заверш./В раб./Не нач.)</span>
+        <span className="status-header lh-col">Статусы работ</span>
         <span className="lh-col percent-col">% заверш.</span>
+      </div>
+      <div className="responsible-legend">
+        <span className="legend-item">
+          <span className="legend-dot" style={{ background: "#5ce1e6" }} />
+          Заверш.
+        </span>
+        <span className="legend-item">
+          <span className="legend-dot" style={{ background: "#f6c947" }} />
+          В работе
+        </span>
+        <span className="legend-item">
+          <span className="legend-dot" style={{ background: "#666" }} />
+          Не нач.
+        </span>
       </div>
       <div className="responsible-list scrollable">
         {items.map((d) => (
